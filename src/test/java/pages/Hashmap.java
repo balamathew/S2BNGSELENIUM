@@ -20,6 +20,21 @@ public class Hashmap {
     return hm;
   }
 
+
+  static int ids;
+  static String ename;
+  static String depts;
+  public  void Employee(int id,String empname,String dept){
+
+ids=id;
+ename=empname;
+depts=dept;
+
+
+
+  }
+
+
     public static void main(String[] args) {
 
       System.out.println(getcrecentialsmap().get("payer name"));

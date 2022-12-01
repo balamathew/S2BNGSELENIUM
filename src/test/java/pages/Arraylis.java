@@ -1,17 +1,21 @@
 package pages;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Arraylis {
 
     public static void main(String[] args) {
 
 
-        int arr[]= {11,22,33,44};
+        int [] a={12,12,3,3,4,2,5,6,6,7,7};
 
-        int arr2[]= {13,2,331,44};
+        ArrayList<Object> al=new ArrayList();
 
-
+        al.add("sgvgv");
+        al.add(45434);
+        al.add(a[0]);
+        System.out.println(al);
 
     }
 }

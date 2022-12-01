@@ -9,10 +9,10 @@ public class Reverseword {
         String w="";
         str+=" ";
 
-        for (int i=0;i<=str.length();i++){
+        for (int i=0;i<str.length();i++){
             char d=str.charAt(i);
             if (!Character.isWhitespace(d)){
-                w=w+d;
+                w=d+w;
             }
           else {
                 System.out.println(w);

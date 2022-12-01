@@ -11,19 +11,23 @@ public class merge2arrays {
         int[] arr3=new int[arr.length+arr2.length];
         int count=0;
 
-        for (int i=0;i<=arr.length;i++){
+        for (int i=0;i<arr.length;i++){
 
             arr3[i]=arr[i];
             count++;
 
         }
-        for (int j=0;j<=arr2.length;j++){
+
+
+
+
+        for (int j=0;j<arr2.length;j++){
 
             arr3[count++]=arr2[j];
         }
-        for (int i=0;i<=arr3.length;i++){
+        for (int r: arr3){
 
-            System.out.print(arr3[i]);
+            System.out.print(r);
         }
 
 

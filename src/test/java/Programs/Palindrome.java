@@ -13,7 +13,7 @@ public class Palindrome {
 
         // Scanner sc=new Scanner(System.in);
 
-        int ds = 12165;
+        int ds = 111;
 
         // int pal = 0;
 

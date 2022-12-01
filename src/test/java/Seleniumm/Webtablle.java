@@ -14,7 +14,7 @@ waits wai=new waits();
         System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver105.exe");
       WebDriver driver=new ChromeDriver();
 //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.navigate().to("https://letcode.in/table");
+        driver.navigate().to("http://seleniumpractise.blogspot.com/2021/08/webtable-in-html.html");
         driver.manage().window().maximize();
 //        driver.navigate().back();
 //        Thread.sleep(3000);
@@ -40,12 +40,17 @@ waits wai=new waits();
 for (WebElement row:rows) {
 
     List<WebElement> allcells = row.findElements(By.tagName("td"));
+    System.out.println("allcellsis"+allcells);
 
     WebElement cells = allcells.get(0);
 
+    driver.findElement(By.cssSelector("#id"));//tag#id,tag.class,.class
+
 String secondcolumn= cells.getText();
 
-if (secondcolumn.equalsIgnoreCase("raj")||secondcolumn.equalsIgnoreCase("man")||secondcolumn.startsWith("Ch")){
+    System.out.println("getextis"+secondcolumn);
+
+if (secondcolumn.equalsIgnoreCase("iron")||secondcolumn.equalsIgnoreCase("man")||secondcolumn.startsWith("Ch")){
 
     WebElement checkbox=allcells.get(3).findElement(By.tagName("input"));
     checkbox.click();

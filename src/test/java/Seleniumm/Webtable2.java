@@ -17,37 +17,43 @@ public class Webtable2 {
 
 WebDriver driver=new ChromeDriver();
 
-        driver.get("http://seleniumpractise.blogspot.com/2021/08/webtable-in-html.html");
+        driver.get("https://cosmocode.io/automation-practice-webtable/");
 
         driver.manage().window().maximize();
 
         JavascriptExecutor js=(JavascriptExecutor)driver;
-        js.executeScript("window.scrollBy(0,300)","");
+        js.executeScript("window.scrollBy(0,1500)","");
 
 
          // WebElement table=driver.findElement(By.xpath("//table[@name='cust_123']"));
 
-          List<WebElement> allrows=driver.findElements(By.tagName("//table[@name='cust_123']//tr"));
+        WebElement table =driver.findElement(By.tagName("table"));
+
+          List<WebElement> allrows=table.findElements(By.tagName("tr"));
+        System.out.println("rows size is "+allrows.size());
 
 
-          for (int i=0;i<allrows.size();i++){
+          for (WebElement row:allrows){
 
-              List<WebElement> allcell=driver.findElements(By.tagName("//table[@name='cust_123']//tr//td"));
+              List<WebElement> allcell=row.findElements(By.tagName("td"));
+              System.out.println("td size is"+allcell.size());
 
              WebElement fcolumn=allcell.get(1);
 
              String fc= fcolumn.getText();
               System.out.println("666"+fc);
 
-//             if (fc.equalsIgnoreCase("USA")){
-//
-//                WebElement checkbox=allcell.get(0).findElement(By.tagName("input"));
-//
-//                checkbox.click();
-//
-//
-//
-//             }
+             if (!fc.startsWith("A")){
+
+                WebElement checkbox=allcell.get(0).findElement(By.tagName("input"));
+
+                checkbox.click();
+
+                 System.out.println("ok");
+
+
+
+             }
 
 
           }
