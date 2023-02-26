@@ -8,8 +8,7 @@ public class Lastnonrepetetive {
 
     public static void main(String[] args) {
         String s="aabbccdefgh";
-
-       char [] c= s.toCharArray();
+        char [] c= s.toCharArray();
 
         Map<Character,Integer> map=new HashMap<>();
 
