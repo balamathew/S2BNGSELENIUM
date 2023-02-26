@@ -13,6 +13,7 @@ public class Actionclass {
     public static void main(String[] wse) {
 
         WebDriver driver=new ChromeDriver();
+       driver.findElement(By.xpath("")).sendKeys(Keys.chord(Keys.CONTROL,Keys.chord("h")));
 
 
 Actions act=new Actions(driver);
@@ -40,7 +41,7 @@ act.dragAndDrop(src,trg);
 
                 Keys.chord(Keys.CONTROL,"A");
 
-                act.doubleClick(src);
+                act.doubleClick(src).perform();
                 act.contextClick();
                 act.moveToElement(trg);
 

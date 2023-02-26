@@ -1,0 +1,57 @@
+getting data from excel sheet
+............................
+
+1. add Apache poi dependencies in pom.xml
+2.Create a class for excel reading using apoche poi like below
+
+public List<Map<String,String> getdata(String excelfilepath,String sheetname){
+Sheet sheet=getsheetnamebyname(Excelfilepath,sheet)
+return sheet(sheet);
+3.provide the sheetname and rownumber in feature file with example keyword
+4.call the excel reader method in step definitions and use
+List<> datas=reader.getdata(filelocation,sheetname);
+ datas.get(rownumber).get(columnname);
+
+Test NG listeners
+.....................
+1. create separate class for listeners and implement the Itestlisteners interface
+provide the code for onstart,ontestfailure,ontestsuccess,ontestskipped.
+2.create test.xml file and add the entry for listeners and mentioned the listeners class
+3.in the class name entry in testng.xml provide runnerclass name
+4.run from textng.xml
+
+Test NG extent report
+.....................
+
+1. add dependency for cucumber testng report
+2.should have add the code for reporting in testrunnerclass
+3.after run >testoutput> cucumbertestng report
+
+jenkins- continuos integration
+..............................
+1.download jenkins dependencies
+2.open url and login with credentials
+3.Create new project with maven
+3.click on manage maven and enter the jdk version and entry in environmental variables
+4.set source as pom.xml and provide mavem clean install comment and applt the settings
+5.provide the git url in the pom.xml field and click build now
+
+
+cucumber reporting
+
+parallel run
+
+1.need to install plugins like maven surfire and failsafe plugin in pom.xml
+2.need to have all the features in one package
+3.should have all the glue file in one package
+4.in test runner class add new method with dataprovider
+
+
+Re-run failed testcases:
+........................
+
+add re-run plugin with location and filename to the test runner class into plugin section
+run the class
+create new testrunner class
+add re-run plugin with location and filename to the test runner class into plugin section
+add the filename with features tag name

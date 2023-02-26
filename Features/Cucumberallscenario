@@ -1,0 +1,23 @@
+CUCUMBER COVERAGE
+
+1.Create a feature file with 5 different scenario
+use background  / hooks
+ 1 scenario passing direct test data
+ 2 scen passing only values
+ 3 header with values
+ 4 scenario with examples
+ 5.scenario by passing test data by excel sheet
+
+ 2.should use common method for activates the driver
+ should use lambda , optional ,streams for scripting
+ should use created enum
+ should use multi threading to run in chrome and firefox
+ should use send keys normal methods,and by using actions class
+ should connects to DB and compare the values
+ should handle dates by selecting from date picker
+ should handle frames and popups
+ should use only javascript executor for sendkeys,clicking
+ should use fluent wait
+
+
+

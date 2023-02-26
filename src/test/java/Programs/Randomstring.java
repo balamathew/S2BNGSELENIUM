@@ -6,20 +6,22 @@ public class Randomstring {
 
 
     public static void main(String[] args) {
-
+String s="chgcjgchgchyfjhvjviufvjgyuyrytetrewewewqwrewtrwtwtrxgfxhchgc";
 int length=5;
         Random rand=new Random();
 StringBuilder sb=new StringBuilder();
 char v=' ';
-        for (int i=0;i<=length;i++){
+String jj="";
+        for (int i=0;i<=s.length();i++){
 
             
             rand.nextInt(length);
-             v= sb.charAt(i);
+             v= s.charAt(i);
 
-            String jj= sb.append(v).toString();
+             jj= sb.append(v).toString();
 
-            System.out.println(jj);
+
         }
+        System.out.println(jj);
     }
 }

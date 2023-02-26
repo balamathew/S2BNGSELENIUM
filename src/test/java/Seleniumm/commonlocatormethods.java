@@ -66,9 +66,9 @@ public class commonlocatormethods {
 
       driver.findElement(locator);
 
-        WebDriverWait wait=new WebDriverWait(driver,20);
-
-      wait.until(ExpectedConditions.elementToBeClickable(locator));
+//        WebDriverWait wait=new WebDriverWait();
+//
+//      wait.until(ExpectedConditions.elementToBeClickable(locator));
 
 
 

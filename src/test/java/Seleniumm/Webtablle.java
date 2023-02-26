@@ -11,11 +11,13 @@ waits wai=new waits();
     public static void main(String[] args) throws InterruptedException {
 
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver105.exe");
-      WebDriver driver=new ChromeDriver();
+
+
+      ChromeDriver driver=new ChromeDriver();
 //driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.navigate().to("http://seleniumpractise.blogspot.com/2021/08/webtable-in-html.html");
         driver.manage().window().maximize();
+
 //        driver.navigate().back();
 //        Thread.sleep(3000);
 //        driver.navigate().forward();
@@ -44,7 +46,7 @@ for (WebElement row:rows) {
 
     WebElement cells = allcells.get(0);
 
-    driver.findElement(By.cssSelector("#id"));//tag#id,tag.class,.class
+   // driver.findElement(By.cssSelector("#id"));//tag#id,tag.class,.class
 
 String secondcolumn= cells.getText();
 

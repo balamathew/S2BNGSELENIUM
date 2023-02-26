@@ -16,7 +16,7 @@ public class Brokenlinks {
 
     public static void main(String[] args) throws IOException {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\Driversc\\chromedriver.exe");
 
         WebDriver driver=new ChromeDriver();
 

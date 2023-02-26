@@ -13,7 +13,7 @@ public class Palindrome {
 
         // Scanner sc=new Scanner(System.in);
 
-        int ds = 111;
+        int ds = 121;
 
         // int pal = 0;
 
@@ -28,6 +28,10 @@ public class Palindrome {
         System.out.println(rev);
         System.out.println(ds);
        // int gs=ds;
+
+
+
+
 
         if(ds==rev){
 

@@ -9,7 +9,7 @@ public class primenumber {
 
         //prime numbers are like they are divisible by 1 and its own number only
 
-        int num = 14;
+        int num = 18;
         int count = 0;
 
 
@@ -20,11 +20,11 @@ public class primenumber {
 
                 if (num%i==0){
                     count++;
-                    System.out.println(count);
+
                 }
 
-
             }
+            System.out.println(count);
         }
         else {
 

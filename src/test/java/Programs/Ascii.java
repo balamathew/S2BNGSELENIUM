@@ -9,7 +9,7 @@ public class Ascii {
         String c="akjfugjgijgi";
 
 
-        for (int i=0;i<=c.length();i++) {
+        for (int i=0;i<=c.length()-1;i++) {
 
             char f=c.charAt(i);
 

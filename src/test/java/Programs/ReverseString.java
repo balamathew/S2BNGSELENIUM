@@ -9,13 +9,16 @@ public class ReverseString {
         String str= "boneykapoor";
         String w =" ";
 
-        for (int i=0;i<=str.length();i++)
-        {
+        StringBuilder sb=new StringBuilder(str);
+        System.out.println(sb.reverse());
 
-            char d=str.charAt(i);
-            w=d+w;
-
-        }
-        System.out.println(w);
+//        for (int i=0;i<=str.length();i++)
+//        {
+//
+//            char d=str.charAt(i);
+//            w=d+w;
+//
+//        }
+       // System.out.println(w);
     }
 }

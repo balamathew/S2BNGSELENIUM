@@ -7,7 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.io.File;
 import java.io.IOException;
 
-public class Javascriptexecutor {
+public class
+Javascriptexecutor {
 
     public static void main(String[] args) throws IOException {
 
@@ -22,9 +23,14 @@ public class Javascriptexecutor {
 
         File src=ts.getScreenshotAs(OutputType.FILE);
 
-        File trg= new File(("locationfiletype.png"));
+        File trg= new File(("location,filetype.png"));
 
         FileUtils.copyFile(src,trg);
+
+        //specific portion of page
+
+        WebElement ele=null;
+        ele.getScreenshotAs(OutputType.FILE);
 
     //scrolldown
 
