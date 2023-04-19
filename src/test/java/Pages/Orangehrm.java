@@ -1,5 +1,6 @@
 package Pages;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,8 +15,9 @@ public class Orangehrm {
 
    public  WebDriver driver;
 
+
 public Orangehrm(WebDriver rdriver){
-    driver=rdriver;
+    this.driver=rdriver;
 }
 
 By uname= By.name("username");

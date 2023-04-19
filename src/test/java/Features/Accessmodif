@@ -1,0 +1,22 @@
+PUBclsPRIvarPROmetFINmetDEFmeth
+
+PROclsPRImetFINvarPUBmetDEFmeth
+.................................
+
+protected class is not allowed in outer class but can provided in inner class
+
+DEFclsDEFvarPROmetFINmetPUBmet
+................................
+1.outer class  allow default after removing public
+
+PRIclsPUBvarPROvarFINmetDEFmeth
+...................................
+
+private class is not allowed in outer class but can provided in inner class
+
+FINclsPRIvarPROmetFINmetDEFmeth
+..................................
+final class cannot be ovveriden by another class
+
+all public static
+PUBclsPUBvarPUBmetPUBmetPUBmeth

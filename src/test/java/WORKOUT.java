@@ -25,7 +25,7 @@ public class WORKOUT {
 
     public static void main(String[] args) throws IOException {
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver105.exe");
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\Driversc\\chromedriver111.exe");
 
         WebDriver driver=new ChromeDriver();
         driver.get("https://cosmocode.io/automation-practice-webtable/");

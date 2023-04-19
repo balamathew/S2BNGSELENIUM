@@ -1,8 +1,0 @@
-Super-----
-super.varname/methodname/const  keyword always refers to only method,variable,constructor of parent class
-super() keyword can be used only inside constructor
-super(a,b)- points to param cons of parent class
-THIS------
-this() keyword can be used only inside constructor
-this(a.b)- points to param cons of current class
-if class B extends class A then this.varname/methodname/const can be used to call objects of both classes except constructor of class A

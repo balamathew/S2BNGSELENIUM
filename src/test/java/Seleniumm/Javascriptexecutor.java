@@ -45,7 +45,7 @@ Javascriptexecutor {
         js.executeScript("arguments[0].values='';","webelement");
   //scrolltoelement
 
-        js.executeScript("arguments[0].scrollintoview(true)",src);
+        js.executeScript("arguments[0].scrollIntoView(true)",src);
 
     }
 }

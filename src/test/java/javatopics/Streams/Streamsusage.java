@@ -1,6 +1,6 @@
 package javatopics.Streams;
 
-import org.openqa.selenium.WindowType;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.*;
