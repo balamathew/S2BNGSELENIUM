@@ -18,8 +18,8 @@ import org.junit.runner.RunWith;
                 features = {"src/test/java/Features/Morescenarios.feature"},
                 glue = {"glue"},
                 monochrome = true,
-                dryRun =false
-             // plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                dryRun =false,
+              plugin = "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         )
 
 public class Testrunner {

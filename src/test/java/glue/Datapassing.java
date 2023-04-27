@@ -19,7 +19,7 @@ public class Datapassing {
     WebDriver idriver;
     Orangehrm oh;
 
-    Logger log=Logger.getLogger(Datapassing.class);
+    //Logger log=Logger.getLogger(Datapassing.class);
 
     @Given("open chrome and launch the URL as {string}")
     public void open_chrome_and_launch_the_url_as(String string) throws InterruptedException {
@@ -40,7 +40,7 @@ public class Datapassing {
     public  void username_as_and_password_as(String string, String string2) throws InterruptedException {
         oh.entercred(string,string2);
         oh.loginbtn();
-        log.info("Data passed as string");
+       // log.info("Data passed as string");
 
 
 
@@ -55,7 +55,7 @@ public class Datapassing {
         String password= data.get(1);
         oh.entercred(uname,password);
         oh.loginbtn();
-        log.info("Data passed as only values");
+       // log.info("Data passed as only values");
 
 
     }
@@ -69,7 +69,7 @@ public class Datapassing {
 
         oh.entercred(uname1,password1);
         oh.loginbtn();
-        log.info("Data passed with header");
+        //log.info("Data passed with header");
 
     }
 
@@ -78,7 +78,7 @@ public class Datapassing {
         idriver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
        oh.entercred(string,string2);
         oh.loginbtn();
-       log.info("Data passed with examples");
+      // log.info("Data passed with examples");
 
     }
 
