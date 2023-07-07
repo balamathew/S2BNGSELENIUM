@@ -39,3 +39,4 @@ build/
 
 .idea
 TestAccounts.xml
+src/test/java/gitignorecheck.java
