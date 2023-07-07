@@ -1,9 +1,7 @@
 package Seleniumm;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Connectionss {
 
@@ -15,10 +13,10 @@ public class Connectionss {
      // st.executeQuery("update city set name ='balaaa' where id=99");
     ResultSet ss= st.executeQuery("Select * from city where id=1;");
 
-       List<String> dbdatas=new ArrayList<String>();
+       List<Map<String,String>> dbdatas=new ArrayList<>();
        while(ss.next()){
        // String h = dbdatas.get(0);
-           System.out.println(ss.getString("Name"));
+           System.out.println(dbdatas.get(1));
                //break;
        }
 con.close();
