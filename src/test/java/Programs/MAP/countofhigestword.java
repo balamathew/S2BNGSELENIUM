@@ -25,11 +25,9 @@ for (Character s:c){
     else
         hm.put(s,hm.get(s)+1);
 }
-        System.out.println(hm);
+       System.out.println(hm);
         Character key=Collections.max(hm.entrySet(),Map.Entry.comparingByValue()).getKey();
         Character key2=Collections.min(hm.entrySet(),Map.Entry.comparingByValue()).getKey();
-
-
 
         //System.out.println(g);
         System.out.println("occurences is"+hm.get(key)+key);

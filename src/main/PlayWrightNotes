@@ -1,0 +1,11 @@
+Pw inspector - scripts the code for younalong with the locator, based on your actions in the application by using page.pause command
+
+PW trace viewer - need to provide where the trace should happen where to stop
+at the end of execution gives you a zip file will all the screenshots and snapshots
+
+Browser context - Browser context will give you the options running multiple applications with different contect
+
+Locators -Locator refname=page.locator("then syntax");
+refname.click();
+locator.alltextContent();
+

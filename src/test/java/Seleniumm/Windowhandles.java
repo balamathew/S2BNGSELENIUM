@@ -1,5 +1,6 @@
 package Seleniumm;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +12,8 @@ import java.util.Set;
 public class Windowhandles {
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver105.exe");
+        //System.setProperty("webdriver.chrome.driver","C:\\Users\\Balam\\IdeaProjects\\S2BNGSELENIUM\\src\\test\\Drivers\\chromedriver113.exe");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
          driver.manage().window().maximize();
@@ -31,7 +33,10 @@ public class Windowhandles {
         System.out.println(cwin);
 
         driver.switchTo().window(pwindow);
-        driver.close();
+        System.out.println(driver.getTitle());
+        driver.switchTo().window(cwin);
+        System.out.println(driver.getTitle());
+        driver.quit();
 
 
 

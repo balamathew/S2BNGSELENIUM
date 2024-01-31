@@ -7,6 +7,7 @@ public class primenumber {
 
     public static void main(String[] args) {
 
+
         //prime numbers are like they are divisible by 1 and its own number only
 
         int num = 18;

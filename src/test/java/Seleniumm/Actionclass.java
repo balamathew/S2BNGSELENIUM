@@ -42,8 +42,8 @@ act.dragAndDrop(src,trg);
                 Keys.chord(Keys.CONTROL,"A");
 
                 act.doubleClick(src).perform();
-                act.contextClick();
-                act.moveToElement(trg);
+                act.contextClick().perform();
+                act.moveToElement(trg).perform();
 
                //
         // Keys.chord(Keys.Pr)

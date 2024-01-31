@@ -10,7 +10,7 @@ public class minandmax {
 
         List<Integer> li= Arrays.asList(11,12,3,4,5,12,67,89);
 
-      int minn=  li.stream().max((v1,v2)-> v1.compareTo(v2)).get().intValue();
+      int minn=  li.stream().min((v1,v2)-> v1.compareTo(v2)).get().intValue();
 
         System.out.println(minn);
     }

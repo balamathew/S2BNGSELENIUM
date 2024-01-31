@@ -19,7 +19,7 @@ public class RemoveDuplicatewords {
         }
 
 
-        System.out.println(st);
+        System.out.println(st.toString());
 
 
 

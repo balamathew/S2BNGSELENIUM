@@ -20,6 +20,7 @@ public class Reversesentence {
         }
 
         System.out.println(s);
-
+StringBuilder sb=new StringBuilder(s);
+        System.out.println(sb.reverse().toString());
     }
 }

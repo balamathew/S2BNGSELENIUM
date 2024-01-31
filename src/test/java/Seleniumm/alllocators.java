@@ -76,7 +76,7 @@ Thread.sleep(5000);
 
 
     @Test(priority = -4)//css selector
-
+//id =#id
 //    Tag and ID	css=tag#id
 //    Tag and Class	css=tag.class
 //    Tag and Attribute	css=tag[attribute=value]

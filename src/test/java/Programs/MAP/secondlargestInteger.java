@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class secondlargestInteger {
     public static void main(String[] args) {
-        Integer[] a = {1,2,3,4,5};
+        Integer[] a = {11,12,31,14,51};
 int t=0;
         for (int i=0;i<a.length;i++){
 
@@ -17,25 +17,30 @@ int t=0;
                 }
             }
         }
-int l=0;
-        for (int i=0;i<a.length;i++){
-            a[i]=l;
-            break;
+
+
+        for(int s:a){
+            System.out.println(s);
         }
-
-
-//        int largest=0;
-//        for (Integer j:a){
-//            largest=j;
-//           // System.out.println(largest);
+//int l=0;
+//        for (int i=0;i<a.length;i++){
+//            a[i]=l;
 //            break;
 //        }
-//       for(int p:a){
-//          if (p<largest){
-//              System.out.println("second largest is"+p);
-//              break;
-//          }
-//
-//        }
+
+
+        int largest=0;
+        for (Integer j:a){
+            largest=j;
+            System.out.println(largest);
+            break;
+        }
+       for(int p:a){
+          if (p<largest){
+              System.out.println("second largest is"+p);
+              break;
+          }
+
+        }
     }
 }

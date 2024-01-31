@@ -1,0 +1,21 @@
+
+Selenium grid
+...............
+Selenium grid is basically used to run the tests in remote machines ,
+through command prompt we can do the setup
+
+1.Standalone selenium driver should be installed
+2.should have chromedriver.exefile and chrome installed on the remote and local machines
+
+1.Go the folder where we have chromedriver and standalone driver and open the command prompt
+2.run the jar file and set the local system as hub, this will generate a url helps the node to register with hub
+3.open another cmd prompt as set the role for Node
+
+once the role for hub and node setted up ,copy the node url
+in java code ,
+DesiredCapablities cap=Desiredcapablities.chrome();
+cap.setbrowsername("chrome");
+cap.platform(wind10);
+
+driver=new RemoteWebdriver(new(URL(nodeurl),cap);
+

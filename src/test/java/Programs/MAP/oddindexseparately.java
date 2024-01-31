@@ -47,24 +47,24 @@ public class oddindexseparately {
 //        System.out.println(sum2);
 //        System.out.println(sum1+sum2+sum3);
 
-//        Map<Integer,Integer>map=new HashMap<>();
-//        for(int i=0;i<a.length;i++){
-//            if (a[i]%2==0){
-//              map.put(a[i],i);
-//          }
-//          else
-//             map.put(a[i],i);
-//       }
-//
-//        System.out.println(map);
-//        for (Map.Entry<Integer,Integer>h:map.entrySet()){
-//            if (h.getValue()%2==0){
-//                al1.add(h.getKey());
-//            }
-//            else {
-//                al2.add(h.getKey());
-//            }
-//        }
+        Map<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<a.length;i++){
+            if (a[i]%2==0){
+              map.put(a[i],i);
+          }
+          else
+             map.put(a[i],i);
+       }
+
+        System.out.println(map);
+        for (Map.Entry<Integer,Integer>h:map.entrySet()){
+            if (h.getValue()%2==0){
+                al1.add(h.getKey());
+            }
+            else {
+                al2.add(h.getKey());
+            }
+        }
 
 
 

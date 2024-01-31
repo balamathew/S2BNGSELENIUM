@@ -84,5 +84,9 @@ public class Trycatchh {
 
             System.out.println("this is TimeoutException block");
         }
+        catch (Exception e){
+
+            System.out.println("this is Master Exception block");
+        }
     }
 }
