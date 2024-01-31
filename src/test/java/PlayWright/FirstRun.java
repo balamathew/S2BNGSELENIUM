@@ -19,7 +19,7 @@ public class FirstRun {
         page.getByRole(AriaRole.LINK,new Page.GetByRoleOptions().setName("Fav"));
         //page.selectOption("select#Form_getForm_Country","Afghanistan");
         //page.locator("select#Form_getForm_Country").selectOption("Afghanistan");
-
+//just a human
 //        Locator countrylist=page.locator("select#Form_getForm_Country option");
 //        countrylist.selectOption("Afghanistan");
         //page.locator("div a:has-text('Register')").click();
